@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo 'Running unit tests...'
                 // If tests fail here, the pipeline will stop automatically
-                sh 'npm test'
+                sh 'CI=true npm test'
             }
         }
 
