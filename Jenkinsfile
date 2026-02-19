@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Building the application...'
                 // Install dependencies
-                sh 'npm install'
+                sh 'PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm install'
             }
         }
         
